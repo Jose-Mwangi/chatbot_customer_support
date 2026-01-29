@@ -1,0 +1,50 @@
+FREQUENTLY ASKED QUESTIONS (FAQ)
+
+Q: What types of projects do you work on?
+A: I work on data science, AI/ML, cloud infrastructure, and backend development projects. This includes building predictive models, creating interactive dashboards, developing AI-powered applications, designing cloud architectures, and building scalable APIs and backend systems.
+
+Q: What industries do you have experience with?
+A: My systems thinking approach allows me to work across various industries. I focus on understanding business problems and translating them into technical solutions, regardless of the specific industry vertical.
+
+Q: What is your typical project timeline?
+A: Project timelines vary based on scope and complexity. Small projects (dashboards, simple APIs) can take 1-2 weeks, while complex AI/ML systems or cloud migrations may take 1-3 months. I provide detailed timelines during the initial consultation.
+
+Q: Do you work remotely or on-site?
+A: I work both remotely and on-site, depending on client needs and project requirements. Remote work is my default, but I'm available for on-site collaboration when necessary.
+
+Q: What tools and technologies do you use?
+A: For data science: Python, SQL, R, Power BI, Tableau, Streamlit, Excel
+For AI/ML: LangChain, TensorFlow, PyTorch, scikit-learn, Hugging Face
+For cloud: AWS, Azure, GCP, IBM Cloud, Docker, Kubernetes
+For backend: FastAPI, Django, Flask, Laravel, PostgreSQL, MongoDB
+For DevOps: CI/CD pipelines, Infrastructure as Code, Git
+
+Q: Can you help with existing projects or systems?
+A: Yes! I can work on existing codebases, optimize current systems, debug issues, add new features, or migrate to modern architectures. I'm comfortable inheriting and improving existing projects.
+
+Q: Do you provide training or documentation?
+A: Absolutely. All projects include comprehensive technical documentation. I also provide knowledge transfer sessions and can offer training for your team on the systems I build.
+
+Q: What is your approach to AI/ML projects?
+A: I emphasize production readiness, evaluation, and reliability. This means building models that not only perform well in testing but are also maintainable, monitored, and aligned with real business needs—not just technical exercises.
+
+Q: Can you help deploy models to production?
+A: Yes. I handle the entire ML lifecycle from development to deployment, including containerization, API development, monitoring, and CI/CD integration for continuous model updates.
+
+Q: Do you offer cloud migration services?
+A: Yes. I can help migrate existing applications and data infrastructure to cloud platforms (AWS, Azure, GCP), ensuring security, scalability, and cost optimization throughout the process.
+
+Q: What makes your approach different?
+A: I practice systems thinking—connecting data, models, infrastructure, and applications into cohesive solutions. I focus on moving from raw data to real-world impact, not just building isolated components.
+
+Q: How do I get started?
+A: Contact me via email at josephkamenya289@gmail.com or call +254 719 432 446 / +254 734 772 818. We'll schedule a consultation to discuss your needs and determine the best approach for your project.
+
+Q: What are your rates?
+A: Rates vary based on project scope, complexity, and timeline. I offer both project-based and hourly pricing. Contact me for a detailed quote after discussing your specific requirements.
+
+Q: Do you sign NDAs?
+A: Yes, I'm happy to sign Non-Disclosure Agreements (NDAs) to protect your sensitive business information and intellectual property.
+
+Q: Can you work with my existing team?
+A: Absolutely. I collaborate well with existing development, data, and product teams. I can integrate into your workflows and processes seamlessly.

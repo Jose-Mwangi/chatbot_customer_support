@@ -1,0 +1,148 @@
+TECHNICAL EXPERTISE & SKILLS
+
+JOSEPH MWANGI - TECHNOLOGY PROFESSIONAL
+
+Core Competencies:
+Multidisciplinary technology professional specializing in data science, analytics, cloud engineering, AI/ML, and backend development. Experienced in building systems that transform raw data into real-world business impact.
+
+====================
+DATA SCIENCE & ANALYTICS
+====================
+
+Programming Languages:
+- Python (NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn)
+- SQL (PostgreSQL, MySQL, SQLite)
+- R (tidyverse, ggplot2, statistical modeling)
+
+Analytics & Visualization:
+- Power BI (interactive dashboards, DAX, Power Query)
+- Tableau (data visualization, story telling)
+- Streamlit (web-based data apps)
+- Excel (advanced formulas, VBA, pivot tables)
+
+Statistical Methods:
+- Predictive modeling and regression analysis
+- Time series forecasting (ARIMA, Prophet)
+- Hypothesis testing and A/B testing
+- Exploratory Data Analysis (EDA)
+- Business intelligence and KPI tracking
+
+====================
+ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
+====================
+
+ML Frameworks:
+- Scikit-learn (classical ML algorithms)
+- TensorFlow & Keras (deep learning)
+- PyTorch (neural networks)
+- XGBoost, LightGBM (gradient boosting)
+
+AI Specializations:
+- Natural Language Processing (NLP)
+- Computer Vision
+- LLM Fine-tuning and prompt engineering
+- Retrieval-Augmented Generation (RAG)
+- LangChain for AI application development
+- Agentic workflows and intelligent automation
+- Multimodal document understanding
+- Vector databases and semantic search
+
+Model Deployment:
+- Model serving and API development
+- MLOps and model monitoring
+- Model evaluation and production readiness
+- A/B testing for model performance
+- Continuous integration for ML pipelines
+
+====================
+CLOUD & DEVOPS
+====================
+
+Cloud Platforms:
+- Amazon Web Services (AWS): EC2, S3, Lambda, RDS, SageMaker
+- Microsoft Azure: VM, Blob Storage, Azure ML, Functions
+- Google Cloud Platform (GCP): Compute Engine, BigQuery, AI Platform
+- IBM Cloud: Watson services, Cloud Functions
+
+Containerization & Orchestration:
+- Docker (containerization, multi-stage builds)
+- Kubernetes (orchestration, scaling, deployments)
+- Docker Compose for multi-container applications
+
+CI/CD & Automation:
+- GitHub Actions, GitLab CI, Jenkins
+- Infrastructure as Code (Terraform, CloudFormation)
+- Automated testing and deployment pipelines
+- Version control with Git
+
+DevOps Practices:
+- Continuous integration and deployment
+- Monitoring and logging (Prometheus, Grafana, ELK)
+- Security best practices and compliance
+- Cost optimization strategies
+
+====================
+BACKEND DEVELOPMENT
+====================
+
+Web Frameworks:
+- FastAPI (modern, high-performance Python APIs)
+- Django (full-featured Python web framework)
+- Flask (lightweight Python microservices)
+- Laravel (PHP web application framework)
+
+Databases:
+- PostgreSQL (relational database, advanced queries)
+- MongoDB (NoSQL, document database)
+- MySQL, SQLite
+- Redis (caching, session management)
+- Vector databases (Pinecone, Chroma, Weaviate)
+
+API Development:
+- RESTful API design and documentation
+- Authentication (JWT, OAuth2, API keys)
+- Rate limiting and security
+- OpenAPI/Swagger documentation
+- GraphQL (basic knowledge)
+
+Architecture Patterns:
+- Microservices architecture
+- Event-driven systems
+- Message queues (RabbitMQ, Kafka)
+- Serverless functions
+- Scalable backend design
+
+====================
+ADDITIONAL SKILLS
+====================
+
+Development Tools:
+- VS Code, PyCharm, Jupyter Notebooks
+- Postman for API testing
+- Linux/Unix command line
+- Shell scripting (Bash)
+
+Soft Skills:
+- Systems thinking and problem-solving
+- Clear technical communication
+- Project planning and management
+- Client collaboration and requirements gathering
+- Technical documentation and knowledge transfer
+
+Languages:
+- English (Fluent)
+- Swahili (Native)
+
+====================
+APPROACH & PHILOSOPHY
+====================
+
+I believe in systems thinking—the ability to connect data, models, infrastructure, and applications into cohesive solutions that solve real problems, not just technical exercises. Every project is approached with:
+
+- Business impact first: Solutions aligned with organizational goals
+- Production readiness: Code that's maintainable, scalable, and secure
+- Data-driven decisions: Analytics and metrics to guide development
+- End-to-end ownership: From data acquisition to deployment and monitoring
+- Continuous improvement: Iterative development with feedback loops
+
+This holistic approach ensures that technical solutions deliver measurable business value and can grow with your organization's needs.

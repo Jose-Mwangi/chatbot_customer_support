@@ -1,0 +1,59 @@
+SERVICES OFFERED BY JOSEPH MWANGI
+
+Overview:
+Joseph Mwangi is a multidisciplinary technology professional specializing in data science, analytics, cloud engineering, AI/ML, and backend development. He helps businesses transform complex data into actionable insights and build scalable, intelligent systems.
+
+Core Service Areas:
+
+1. DATA SCIENCE & ANALYTICS
+- Statistical analysis and predictive modeling
+- Time series forecasting for business planning
+- Exploratory data analysis (EDA) and data cleaning
+- Business intelligence and reporting
+- Interactive dashboard development using Power BI, Tableau, and Streamlit
+- Excel-based analytics and automation
+- Python, SQL, and R for data processing and analysis
+- Decision-ready insights from structured and unstructured data
+
+2. AI & MACHINE LEARNING
+- Custom machine learning model development and deployment
+- Natural Language Processing (NLP) solutions
+- Computer vision applications
+- LLM fine-tuning and prompt engineering
+- Retrieval-Augmented Generation (RAG) systems
+- LangChain-based AI applications
+- Agentic workflows and intelligent automation
+- Multimodal document understanding
+- Model evaluation and production readiness
+- AI system design with emphasis on reliability
+
+3. CLOUD & DEVOPS ENGINEERING
+- Cloud architecture design and deployment (AWS, Azure, GCP, IBM Cloud)
+- Docker containerization and Kubernetes orchestration
+- CI/CD pipeline setup and automation
+- Infrastructure as Code (IaC) implementation
+- Scalable cloud infrastructure for data and applications
+- Cloud migration and optimization
+- Security best practices and compliance
+- Cost optimization strategies
+
+4. BACKEND DEVELOPMENT
+- RESTful API design and development
+- FastAPI, Django, Flask, and Laravel applications
+- Database design and optimization (PostgreSQL, MongoDB)
+- Microservices architecture
+- Authentication and authorization systems
+- API integration and third-party service connections
+- Scalable backend systems for web and mobile applications
+- Real-time data processing pipelines
+
+Project Approach:
+Joseph takes a systems thinking approach, connecting data, models, infrastructure, and applications into cohesive solutions that solve real business problems. All solutions are designed to be scalable, maintainable, and aligned with business constraints.
+
+Deliverables:
+- Production-ready code and documentation
+- Interactive dashboards and reporting tools
+- Deployed AI/ML models with monitoring
+- Cloud infrastructure with security best practices
+- Comprehensive technical documentation
+- Training and knowledge transfer

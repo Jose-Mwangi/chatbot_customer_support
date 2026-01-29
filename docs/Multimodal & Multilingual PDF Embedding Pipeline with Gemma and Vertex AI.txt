@@ -1,0 +1,168 @@
+Multimodal & Multilingual PDF Embedding Pipeline with Gemma and Vertex AI
+This repository hosts a Python pipeline that extracts text, tables, and images from PDF documents, generates multimodal descriptions for visual content (tables and images) using Google's Gemma model (running locally), and then creates multilingual text embeddings for all extracted information using Google Cloud Vertex AI's text-multilingual-embedding-002 model. The generated embeddings are stored in a JSON file, ready for use in Retrieval Augmented Generation (RAG) systems or other downstream applications.
+
+Key Features:
+
+Multimodal Descriptions (via Gemma): Processes tables and images from PDFs, generating rich descriptive text in French using the open-source Gemma 3.4B-IT model, which runs locally on your machine/Colab GPU.
+Multilingual Text Embeddings (via Vertex AI): Leverages Google Cloud's text-multilingual-embedding-002 model for embeddings, supporting a wide range of languages.
+Structured Output: Stores embeddings and metadata (PDF source, page number, content type, links to extracted assets) in a comprehensive JSON format.
+How it Works
+PDF Parsing: Utilizes PyMuPDF to extract text blocks and images, and Camelot to accurately extract tabular data.
+Content Separation: Distinguishes between plain text, tables, and non-table images.
+Multimodal Description (for Tables & Images using Gemma):
+For tables, the pipeline captures an image of the table and also uses its text representation.
+For standalone images (e.g., graphs, charts), it captures the image.
+These images (and optionally table text) are then passed to the Gemma 3.4B-IT model (via the gemma Python library) with specific prompts to generate rich, descriptive text in French. This step runs locally and does not incur direct API costs.
+Multilingual Text Embedding (via Vertex AI):
+The cleaned text content (original text chunks, or generated descriptions for tables/images) is then passed to the text-multilingual-embedding-002 model (via Vertex AI).
+This model generates a high-dimensional embedding vector (768 dimensions) for each piece of content. This step connects to Google Cloud Vertex AI and will incur costs.
+JSON Output: All generated embeddings, along with rich metadata (original PDF, page, content type, links to extracted assets), are compiled into a single JSON file.
+Requirements & Setup
+This pipeline uses a combination of local models (Gemma) and Google Cloud Platform services (Vertex AI).
+
+Google Cloud Project with Billing Enabled (for Text Embeddings):
+CRITICAL: The text embedding generation step uses Google Cloud Vertex AI. This will incur costs on your Google Cloud Platform account. Ensure you have an active billing account linked to your project.
+Enable the Vertex AI API.
+Authentication for Google Cloud (for Text Embeddings):
+The easiest way to run this in a Colab environment is using google.colab.auth.authenticate_user().
+For local execution, ensure your Google Cloud SDK is configured and authenticated (gcloud auth application-default login).
+Hardware Requirements (for Gemma):
+Running the Gemma 3.4B-IT model requires a GPU with sufficient VRAM (e.g., a Colab T4 or V100 GPU, or a local GPU with at least ~8-10GB VRAM is recommended). If a GPU is not available, Gemma will likely run on CPU but will be significantly slower.
+Local Setup
+Clone the repository:
+
+git clone https://huggingface.co/Anonymous1223334444/pdf-multimodal-multilingual-embedding-pipeline
+cd pdf-multimodal-multilingual-embedding-pipeline
+
+Install Python dependencies:
+
+pip install -r requirements.txt
+
+System-level dependencies for Camelot/PyMuPDF (Linux/Colab): You might need to install these system packages for PyMuPDF and Camelot to function correctly.
+
+# Update package list
+sudo apt-get update
+# Install Ghostscript (required by Camelot)
+sudo apt-get install -y ghostscript
+# Install python3-tk (required by some PyMuPDF functionalities)
+sudo apt-get install -y python3-tk
+# Install OpenCV (via apt, for camelot-py[cv])
+sudo apt-get install -y libopencv-dev python3-opencv
+
+Note: If you are running on Windows or macOS, the installation steps for camelot-py might differ. Refer to the Camelot documentation for more details.
+
+Set up Environment Variables (for Vertex AI Text Embeddings):
+
+export GOOGLE_CLOUD_PROJECT="your-gcp-project-id"
+export VERTEX_AI_LOCATION="us-central1" # Or your preferred Vertex AI region (e.g., us-east4)
+
+Replace your-gcp-project-id and us-central1 with your actual Google Cloud Project ID and Vertex AI region.
+
+Place your PDF files: Create a docs directory in the root of the repository and place your PDF documents inside it.
+
+pdf-multimodal-multilingual-embedding-pipeline/
+├── docs/
+│   └── your_document.pdf
+└── another_document.pdf
+
+Run the pipeline:
+
+python run_pipeline.py
+
+The generated embedding file (embeddings_statistiques_multimodal.json) and extracted assets will be saved in the output/ directory.
+
+Google Colab Usage
+A Colab notebook version of this pipeline is ideal for quick experimentation due to pre-configured environments and GPU access.
+
+Open a new Google Colab notebook.
+Change runtime to GPU: Go to Runtime > Change runtime type and select T4 GPU or V100 GPU.
+Install system and Python dependencies:
+!pip uninstall -y camelot camelot-py # Ensure clean install
+!pip install PyMuPDF
+!apt-get update
+!apt-get install -y ghostscript python3-tk libopencv-dev python3-opencv
+!pip install camelot-py[cv] google-cloud-aiplatform tiktoken pandas beautifulsoup4 Pillow gemma jax jaxlib numpy
+
+Authenticate to Google Cloud (for Vertex AI):
+from google.colab import auth
+auth.authenticate_user()
+
+Set your Google Cloud Project ID and Location:
+import os
+# Replace with your actual Google Cloud Project ID
+os.environ["GOOGLE_CLOUD_PROJECT"] = "YOUR_GCP_PROJECT_ID_HERE"
+# Set your preferred Vertex AI location (e.g., "us-central1", "us-east4")
+os.environ["VERTEX_AI_LOCATION"] = "us-central1"
+
+# Critical: Adjust JAX memory allocation for Gemma
+os.environ["XLA_PYTHON_CLIENT_MEM_FRACTION"]="1.00"
+
+Upload your PDF files: You can use the Colab file upload feature or mount Google Drive. Ensure your PDFs are in a directory named docs within /content/.
+# Example for uploading
+from google.colab import files
+import os
+from pathlib import Path
+
+PDF_DIRECTORY = Path("/content/docs")
+PDF_DIRECTORY.mkdir(parents=True, exist_ok=True)
+uploaded = files.upload()
+for filename in uploaded.keys():
+    os.rename(filename, PDF_DIRECTORY / filename)
+
+Copy and paste the code from src/pdf_processor.py, src/embedding_utils.py and run_pipeline.py into Colab cells and execute. Make sure to execute embedding_utils.py content first, then pdf_processor.py content, then run_pipeline.py content, or combine them logically into your notebook.
+Output
+The pipeline will generate:
+
+embeddings_statistiques_multimodal.json: A JSON file containing all generated embeddings and their metadata.
+output/extracted_graphs/: Directory containing extracted images (PNG format).
+output/extracted_tables/: Directory containing HTML representations of extracted tables.
+Example embeddings_statistiques_multimodal.json Entry
+[
+  {
+    "pdf_file": "sample.pdf",
+    "page_number": 1,
+    "chunk_id": "text_0",
+    "content_type": "text",
+    "text_content": "This is a chunk of text extracted from the first page of the document...",
+    "embedding": [0.123, -0.456, ..., 0.789],
+    "pdf_title": "Sample Document",
+    "pdf_subject": "Data Analysis",
+    "pdf_keywords": "statistics, report"
+  },
+  {
+    "pdf_file": "sample.pdf",
+    "page_number": 2,
+    "chunk_id": "table_0",
+    "content_type": "table",
+    "text_content": "Description en français du tableau: Ce tableau présente les ventes mensuelles par région. Il inclut les colonnes Mois, Région, et Ventes. La région Nord a la plus forte croissance...",
+    "embedding": [-0.987, 0.654, ..., 0.321],
+    "table_html_url": "/static/extracted_tables/sample_p2_table0.html",
+    "image_url": "/static/extracted_graphs/sample_p2_table0.png",
+    "pdf_title": "Sample Document",
+    "pdf_subject": "Data Analysis",
+    "pdf_keywords": "statistics, report"
+  },
+  {
+    "pdf_file": "sample.pdf",
+    "page_number": 3,
+    "chunk_id": "image_0",
+    "content_type": "image",
+    "text_content": "Description en français de l'image: Ce graphique est un histogramme montrant la répartition des âges dans la population. L'axe des X représente les tranches d'âge et l'axe des Y la fréquence. La majorité de la population se situe entre 25 et 40 ans.",
+    "embedding": [0.456, -0.789, ..., 0.123],
+    "image_url": "/static/extracted_graphs/sample_p3_img0.png",
+    "pdf_title": "Sample Document",
+    "pdf_subject": "Data Analysis",
+    "pdf_keywords": "statistics, report"
+  }
+]
+
+Acknowledgments
+This pipeline leverages the power of:
+
+Gemma AI
+Google AI Gemini Models
+PyMuPDF
+Camelot
+Tiktoken
+Pandas
+BeautifulSoup

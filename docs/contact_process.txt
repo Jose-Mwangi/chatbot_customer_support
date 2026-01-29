@@ -1,0 +1,190 @@
+CONTACT INFORMATION & PROJECT PROCESS
+
+====================
+CONTACT DETAILS
+====================
+
+Name: Joseph Mwangi
+Title: Data Scientist | Data Analyst | Cloud Engineer | AI/ML Specialist | Backend Developer
+
+Email: josephkamenya289@gmail.com
+Phone: +254 719 432 446 / +254 734 772 818
+
+Portfolio Website: https://portfolio-jose-mwas.vercel.app/
+
+Location: Based in Kenya, available for remote work globally and on-site within East Africa
+
+Availability: Open to freelance projects, contract work, and full-time opportunities
+
+====================
+HOW TO WORK WITH ME
+====================
+
+Step 1: Initial Consultation (Free)
+Contact me via email or phone to schedule a consultation. We'll discuss:
+- Your business needs and challenges
+- Project goals and desired outcomes
+- Technical requirements and constraints
+- Timeline and budget expectations
+- Success metrics and deliverables
+
+Step 2: Proposal & Agreement
+After understanding your needs, I'll provide:
+- Detailed project proposal with scope of work
+- Technical approach and methodology
+- Timeline with milestones
+- Cost estimate (project-based or hourly)
+- Terms and conditions
+Once approved, we'll sign an agreement and begin work.
+
+Step 3: Discovery & Planning
+- Detailed requirements gathering
+- Technical architecture design
+- Data assessment (if applicable)
+- Risk identification and mitigation strategies
+- Project roadmap with clear milestones
+
+Step 4: Development & Iteration
+- Agile development with regular updates
+- Bi-weekly or weekly progress check-ins
+- Demo sessions for feedback
+- Iterative improvements based on your input
+- Continuous testing and quality assurance
+
+Step 5: Deployment & Launch
+- Production deployment with monitoring
+- Performance testing and optimization
+- Security audit and best practices implementation
+- User acceptance testing (UAT)
+- Go-live support
+
+Step 6: Documentation & Training
+- Comprehensive technical documentation
+- User guides and operational manuals
+- Knowledge transfer sessions
+- Training for your team (if needed)
+- Handover of all code and assets
+
+Step 7: Post-Launch Support
+- Bug fixes and issue resolution
+- Performance monitoring
+- Optional maintenance and updates
+- Ongoing support packages available
+
+====================
+PROJECT TYPES & ENGAGEMENT MODELS
+====================
+
+Engagement Models:
+1. Project-Based: Fixed scope, timeline, and budget
+2. Hourly/Time & Materials: Flexible for evolving requirements
+3. Retainer: Ongoing support and development
+4. Consulting: Technical guidance and strategy
+
+Typical Project Categories:
+
+Data Science Projects (2-8 weeks):
+- Dashboard development
+- Predictive modeling
+- Data pipeline creation
+- Business intelligence solutions
+
+AI/ML Projects (4-12 weeks):
+- Custom ML model development
+- NLP applications
+- Computer vision systems
+- RAG-based chatbots
+- LLM fine-tuning
+
+Cloud Projects (2-8 weeks):
+- Cloud migration
+- Infrastructure setup
+- DevOps pipeline implementation
+- System optimization
+
+Backend Projects (3-10 weeks):
+- API development
+- Database design
+- Microservices architecture
+- System integration
+
+====================
+COMMUNICATION & UPDATES
+====================
+
+Communication Channels:
+- Email for formal communication and documentation
+- Phone/WhatsApp for quick discussions
+- Video calls for detailed technical discussions (Zoom, Google Meet)
+- Project management tools (Trello, Jira, Asana) for tracking
+- GitHub/GitLab for code collaboration
+
+Update Frequency:
+- Weekly progress reports
+- Bi-weekly demo sessions
+- Ad-hoc communication as needed
+- 24-48 hour response time for queries
+
+====================
+WHAT I NEED FROM YOU
+====================
+
+To ensure project success, I'll need:
+- Clear project objectives and success criteria
+- Access to relevant data, systems, and documentation
+- Stakeholder availability for feedback and decisions
+- Timely responses to questions and clarifications
+- Any existing code, APIs, or infrastructure details
+
+====================
+PAYMENT & TERMS
+====================
+
+Payment Structure:
+- 30% upfront deposit to begin work
+- 40% at mid-project milestone
+- 30% upon completion and delivery
+(Terms can be adjusted for larger projects)
+
+Payment Methods:
+- Bank transfer
+- Mobile money (M-Pesa)
+- PayPal
+- Wise (for international clients)
+
+Invoicing:
+- Detailed invoices provided for all payments
+- Tax documentation available upon request
+
+====================
+CONFIDENTIALITY & IP
+====================
+
+- Happy to sign Non-Disclosure Agreements (NDAs)
+- All client data treated as confidential
+- Intellectual property rights transferred upon final payment
+- Code and deliverables remain your property
+- Portfolio use requires your permission
+
+====================
+WHY CHOOSE ME?
+====================
+
+✓ End-to-end expertise: From data to deployment
+✓ Systems thinking: Holistic approach to problem-solving
+✓ Production focus: Code that works in the real world
+✓ Clear communication: Regular updates and transparency
+✓ Quality delivery: Professional, tested, documented solutions
+✓ Business alignment: Solutions that drive measurable impact
+
+====================
+GET STARTED TODAY
+====================
+
+Ready to discuss your project?
+
+📧 Email: josephkamenya289@gmail.com
+📱 Phone: +254 719 432 446 / +254 734 772 818
+🌐 Portfolio: https://portfolio-jose-mwas.vercel.app/
+
+I typically respond within 24 hours. Let's build something great together!
